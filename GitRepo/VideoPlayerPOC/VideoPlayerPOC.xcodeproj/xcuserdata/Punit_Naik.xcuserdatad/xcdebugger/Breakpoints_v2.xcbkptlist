@@ -49,6 +49,21 @@
                   endingLineNumber = "269"
                   offsetFromSymbolStart = "1588">
                </Location>
+               <Location
+                  uuid = "A9954714-202A-463D-991B-06E6A68069FB - 56d92ed50ee21eb8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in VideoPlayerPOC.ViewController.downloadFile(from: Foundation.URL, completion: (Swift.Optional&lt;Foundation.URL&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "VideoPlayerPOC"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Punit_Naik/Desktop/GitRepo/GitRepo/VideoPlayerPOC/VideoPlayerPOC/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "269"
+                  endingLineNumber = "269"
+                  offsetFromSymbolStart = "1588">
+               </Location>
             </Locations>
          </BreakpointContent>
       </BreakpointProxy>
@@ -81,6 +96,22 @@
             startingLineNumber = "115"
             endingLineNumber = "115"
             landmarkName = "goToNextPage(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D7BFAAC-F144-4E74-ABE0-C2E38CAEC117"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VideoPlayerPOC/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
+            landmarkName = "loadData()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

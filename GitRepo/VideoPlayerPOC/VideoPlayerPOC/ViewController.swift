@@ -281,22 +281,24 @@ extension ViewController {
             print(viewModel.videoURL)
             print(viewModel.pages)
             videoPlayerViewModel = viewModel
-            // Create VideoPlayerView
-            downloadFile(from: viewModel.videoURL) {[weak self] url, error in
-                
-                if let localURL = url {
-                    // File downloaded successfully, 'localURL' points to the downloaded file
-                    print("Downloaded file: \(localURL)")
-                    DispatchQueue.main.async {
-                                                
-                        self?.setupPlayer(url: localURL)
-                        self?.updateProgressBar()
-                    }
-                } else if let error = error {
-                    // Handle the download error
-                    print("Download error: \(error)")
-                }
+            
+            DispatchQueue.main.async {
+                self.setupPlayer(url: viewModel.videoURL)
+                self.updateProgressBar()
             }
+            
+            // Create VideoPlayerView
+//            downloadFile(from: viewModel.videoURL) {[weak self] url, error in
+//                
+//                if let localURL = url {
+//                    // File downloaded successfully, 'localURL' points to the downloaded file
+//                    print("Downloaded file: \(localURL)")
+//                    
+//                } else if let error = error {
+//                    // Handle the download error
+//                    print("Download error: \(error)")
+//                }
+//            }
         } else {
             print("Failed to load JSON data.")
         }

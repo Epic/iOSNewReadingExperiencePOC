@@ -9,6 +9,8 @@ import UIKit
 import AVFoundation
 
 class ViewController: UIViewController {
+    
+//https://cdn-gcp.getepic.com/media/cat-ninja-book-08_fullbook_view.m3u8,
         
     @IBOutlet weak var videoPlayerView: UIView!
     @IBOutlet weak var playPauseButton: UIButton!
@@ -204,7 +206,7 @@ extension ViewController {
         player?.addPeriodicTimeObserver(forInterval: CMTime(seconds: 1, preferredTimescale: 1), queue: .main) { [weak self] time in
             guard let self = self else { return }
             let currentTime = time.seconds
-            let totalSeconds = 558.0
+            let totalSeconds: Double = Double(videoPlayerViewModel?.pages.last?.endTime ?? "0") ?? 0.0
             if currentTime == 0 {
                 self.currentPageIndex = 0
             }
@@ -276,7 +278,7 @@ extension ViewController {
     }
         
     private func loadData() {
-        if let viewModel = JSONLoader.loadVideoPlayerViewModel(fromJSONFile: "VideoJson") {
+        if let viewModel = JSONLoader.loadVideoPlayerViewModel(fromJSONFile: "video2") { //video1, video2, video3, VideoJson
             // Use viewModel for your video player
             print(viewModel.videoURL)
             print(viewModel.pages)

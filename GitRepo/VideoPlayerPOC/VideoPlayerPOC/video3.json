@@ -1,0 +1,21 @@
+{
+    "bookURL": "https://videocontent.storymagic.co/2/83512/video_all.m3u8",
+    "pages": [
+        {
+            "pageIndex": 0,
+            "startTime": "0.00",
+            "endTime": "12.01"
+        },
+        {
+            "pageIndex": 1,
+            "startTime": "12.02",
+            "endTime": "22.01"
+        },
+        {
+            "pageIndex": 2,
+            "startTime": "22.02",
+            "endTime": "44.0"
+        }
+    ]
+}
+
